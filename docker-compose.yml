@@ -1,0 +1,13 @@
+version: "2"
+#
+# Development settings:
+#    databases persisted on mount directory ./local-databases
+#
+services:
+  xml-to-rdf-server:
+    build: .
+    restart: always
+    environment:
+         - JAVA_OPTS= -Xmx512M -Djava.security.egd=file:/dev/./urandom
+    ports:
+      - "54375:8080"
