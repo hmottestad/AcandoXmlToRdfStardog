@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 
-mvn clean install
+mvn clean install &&  docker-compose up -d --build
+
 
 
