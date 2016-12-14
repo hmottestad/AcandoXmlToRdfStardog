@@ -45,7 +45,6 @@ public class Web {
             .uuidBasedIdInsteadOfBlankNodes("http://example.com/")
             .convertComplexElementsWithOnlyAttributesAndSimpleTypeChildrenToPredicate(true)
             .convertComplexElementsWithOnlyAttributesToPredicate(true)
-            .autoTypeLiterals(true)
             .build()
             .convertToStream(inputStream,byteArrayOutputStream);
 
