@@ -8,6 +8,6 @@ services:
     build: .
     restart: always
     environment:
-         - JAVA_OPTS= -Xmx512M -Djava.security.egd=file:/dev/./urandom
+         - JAVA_OPTS= -Xmx1536M -Djava.security.egd=file:/dev/./urandom
     ports:
       - "54375:8080"
