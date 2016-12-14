@@ -43,6 +43,8 @@ public class Web {
         Builder.getAdvancedBuilderStream()
             .setBaseNamespace("http://example.com/", Builder.AppliesTo.bothElementsAndAttributes)
             .uuidBasedIdInsteadOfBlankNodes("http://example.com/")
+            .convertComplexElementsWithOnlyAttributesAndSimpleTypeChildrenToPredicate(true)
+            .convertComplexElementsWithOnlyAttributesToPredicate(true)
             .build()
             .convertToStream(inputStream,byteArrayOutputStream);
 
